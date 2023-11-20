@@ -1,6 +1,6 @@
 import react from 'react';
 
-const subject_list = ['ajarn','musician'];
+const subject_list = ['ajarn','musician','animal', 'fruit', 'drug name', 'rxcu80'];
 
 function List(){
     return (
