@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<div id="root" style="font-size: 7.0vh; text-align: center;"></div>
+<body>
+    <script>
+        ajarn_list = [
+            "หนังสือ",
+            "โทรทัศน์",
+            "คอมพิวเตอร์",
+            "โทรศัพท์",
+            "เสื้อผ้า",
+            "รองเท้า",
+            "กระเป๋า",
+            "นาฬิกา",
+            "แว่นตา",
+            "รถยนต์",
+            "จักรยาน",
+            "เครื่องดนตรี",
+            "กล้องถ่ายรูป",
+            "เครื่องปรับอากาศ",
+            "ตู้เย็น",
+            "เตียงนอน",
+            "โต๊ะ",
+            "เก้าอี้",
+            "โคมไฟ",
+            "ผ้าม่าน",
+            "โทรทัศน์",
+            "คอมพิวเตอร์",
+            "โทรศัพท์มือถือ",
+            "เสื้อผ้า",
+            "รองเท้า",
+            "กระเป๋า",
+            "นาฬิกา",
+            "แว่นตา",
+            "รถยนต์",
+            "จักรยาน",
+            "เครื่องดนตรี",
+            "กล้องถ่ายรูป",
+            "เครื่องปรับอากาศ",
+            "ตู้เย็น",
+            "เตียงนอน",
+            "โต๊ะ",
+            "เก้าอี้",
+            "โคมไฟ",
+            "ผ้าม่าน"
+        ];
+
+
+        container = document.getElementById("root")
+        AjarnHTML = "<h1>" + ajarn_list[Math.floor(Math.random() * ajarn_list.length)] + "</h1>";
+
+        function countdown(){
+            if(seconds > 0){
+                seconds -= 1;
+                text = '<b>หันจอไปทางเพื่อน</b><br>'
+                newHTML = text + seconds;
+                container.innerHTML = newHTML;
+            } else {
+                container.innerHTML = AjarnHTML;
+                clearInterval();
+            }
+        }
+
+        seconds = 6;
+        setInterval(countdown, 1000);
+    </script>
+</body>
+<a href = "index.html" style="text-align: center;">Back</a>
+</html>
