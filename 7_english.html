@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<div id="root" style="font-size: 7.0vh; text-align: center;"></div>
+<body>
+    <script>
+
+        ajarn_list = [
+        "eat",
+        "run",
+        "happy",
+        "big",
+        "small",
+        "jump",
+        "play",
+        "sleep",
+        "fast",
+        "slow",
+        "good",
+        "bad",
+        "nice",
+        "sad",
+        "tall",
+        "short",
+        "hot",
+        "cold",
+        "clean",
+        "dirty",
+        "loud",
+        "quiet",
+        "hard",
+        "soft",
+        "happy",
+        "sad",
+        "angry",
+        "afraid",
+        "proud",
+        "surprised",
+        "nervous",
+        "calm",
+        "friendly",
+        "silly",
+        "serious",
+        "curious",
+        "creative",
+        "organized",
+        "lazy",
+        "active",
+        "healthy",
+        "sick",
+        "beautiful",
+        "ugly",
+        "old",
+        "young",
+        "happy",
+        "sad",
+        "hot",
+        "cold",
+        "tall",
+        "short",
+        "long",
+        "short",
+        "smile",
+        "laugh",
+        "cry",
+        "read",
+        "write",
+        "listen",
+        "speak",
+        "learn",
+        "teach",
+        "walk",
+        "sit"
+        ];
+
+
+        container = document.getElementById("root")
+        AjarnHTML = "<h1>" + ajarn_list[Math.floor(Math.random() * ajarn_list.length)] + "</h1>";
+
+        function countdown(){
+            if(seconds > 0){
+                seconds -= 1;
+                text = '<b>หันจอไปทางเพื่อน</b><br>'
+                newHTML = text + seconds;
+                container.innerHTML = newHTML;
+            } else {
+                container.innerHTML = AjarnHTML;
+                clearInterval();
+            }
+        }
+
+        seconds = 6;
+        setInterval(countdown, 1000);
+    </script>
+</body>
+<a href = "index.html" style="text-align: center;">Back</a>
+</html>
