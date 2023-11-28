@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<div id="root" style="font-size: 7.0vh; text-align: center;"></div>
+<body>
+    <script>
+        ajarn_list = [
+            "I",
+            "you",
+            "he",
+            "she",
+            "it",
+            "we",
+            "they",
+            "me",
+            "him",
+            "her",
+            "us",
+            "them",
+            "this",
+            "that",
+            "my",
+            "your",
+            "his",
+            "her",
+            "its",
+            "our",
+            "their",
+            "mine",
+            "yours",
+            "hers",
+            "ours",
+            "apple",
+            "ball",
+            "cat",
+            "dog",
+            "eat",
+            "fish",
+            "good",
+            "happy",
+            "in",
+            "jump",
+            "kite",
+            "like",
+            "mouse",
+            "nice",
+            "orange",
+            "play",
+            "quiet",
+            "run",
+            "sit",
+            "tree",
+            "umbrella",
+            "van",
+            "walk",
+            "yellow",
+            "zebra",
+            "and",
+            "but",
+            "or",
+            "because",
+            "if",
+            "when",
+            "while",
+            "after",
+            "before",
+            "above",
+            "over",
+            "under",
+            "wow",
+            "oh",
+            "ah",
+            "yes",
+            "no"
+        ];
+
+
+        container = document.getElementById("root")
+        AjarnHTML = "<h1>" + ajarn_list[Math.floor(Math.random() * ajarn_list.length)] + "</h1>";
+
+        function countdown(){
+            if(seconds > 0){
+                seconds -= 1;
+                text = '<b>หันจอไปทางเพื่อน</b><br>'
+                newHTML = text + seconds;
+                container.innerHTML = newHTML;
+            } else {
+                container.innerHTML = AjarnHTML;
+                clearInterval();
+            }
+        }
+
+        seconds = 6;
+        setInterval(countdown, 1000);
+    </script>
+</body>
+<a href = "index.html" style="text-align: center;">Back</a>
+</html>

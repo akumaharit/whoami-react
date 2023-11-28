@@ -9,6 +9,9 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^10.6.0",
     "firebase-admin": "^11.11.0",
+    "google-spreadsheet": "^4.1.1",
+    "googleapis": "^128.0.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -39,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "g-sheets-api": "^2.2.0",
+    "gh-pages": "^6.1.0"
   }
 }
